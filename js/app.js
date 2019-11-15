@@ -1,6 +1,21 @@
 $(function(){
+ $(".offer-carousel").owlCarousel({
+        nav: false,
+        loop: true,
+        startPosition: 1,
+        dots: true,
+        margin: 0,
+        dotClass: 'owl-dot',
+       responsive:{
+            0:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+       }
+    });
 
-    
     $(".works-carousel").owlCarousel({
         nav: true,
         loop: true,
@@ -28,6 +43,7 @@ $(function(){
 
     $('.works-wrap').isotope({
         itemSelector: '.works-wrap__item',
+        
       });
 
       $(document).on("click", ".work-tabs__item", e => {
