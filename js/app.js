@@ -33,7 +33,9 @@ $(function(){
        }
     });
 
-
+    $('.menu').on('click', () => {
+        $('.header__menu').toggleClass('menuActive')
+    });
 
     $('ul.work-tabs').on('click', 'li:not(.active)', function(e){
         e.preventDefault();

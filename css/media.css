@@ -134,6 +134,13 @@
     font-size: 30px;
   }
 }
+@media screen and (max-width: 405px) {
+  .header__menu{
+    position: absolute;
+    top: 0px;
+    right: 65px;
+  }
+}
 @media screen and (max-width: 375px) {
   .collage {
     display: none;
